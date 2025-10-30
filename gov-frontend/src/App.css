@@ -38,12 +38,11 @@ body {
     border-radius: 8px;
     margin-top: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    display: grid; /* Changed for two dropdowns */
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
-    gap: 20px; /* Space between them */
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 20px; 
 }
 
-/* NEW STYLE for each dropdown */
 .select-group label {
     display: block;
     margin-bottom: 10px;
