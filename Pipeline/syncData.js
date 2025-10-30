@@ -22,10 +22,10 @@ const Performance = mongoose.model('Performance', performanceSchema);
 
 // 5. The main sync function
 async function syncData() {
-    if (MONGO_URI.includes('YOUR_NEW_PASSWORD')) {
-        console.error('ERROR: Please update YOUR_NEW_PASSWORD in the MONGO_URI variable.');
-        return;
-    }
+    // if (MONGO_URI.includes('YOUR_NEW_PASSWORD')) {
+    //     console.error('ERROR: Please update YOUR_NEW_PASSWORD in the MONGO_URI variable.');
+    //     return;
+    // }
 
     try {
         await mongoose.connect(MONGO_URI);
