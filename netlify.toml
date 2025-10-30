@@ -1,4 +1,4 @@
 [build]
-  base    = "frontend_app"
-  publish = "build"
+  base    = "gov-frontend"
+  publish = "dist"
   command = "npm run build"
