@@ -4,7 +4,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } fro
 import './App.css';
 
 // For local-host: 'http://localhost:5000'
-const API_BASE_URL = 'http://localhost:5000';
+const API_BASE_URL = 'https://fellowship-project-2026.onrender.com';
 
 function App() {
   const [states, setStates] = useState([]);
