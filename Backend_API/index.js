@@ -1,4 +1,3 @@
-// 2_Backend_API/index.js (UPDATED FOR MULTI-STATE)
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
@@ -72,6 +71,5 @@ app.get('/api/performance/:district', async (req, res) => {
     }
 });
 
-// --- Start Server ---
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`API server running on port ${PORT}`));
