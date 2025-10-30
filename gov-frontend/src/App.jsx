@@ -4,7 +4,7 @@ import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, ResponsiveContainer } fro
 import './App.css';
 
 // For local-host: 'http://localhost:5000'
-const API_BASE_URL = 'https://fellowship-project-2026.onrender.com';
+const API_BASE_URL = 'http://localhost:5000';
 
 function App() {
   const [states, setStates] = useState([]);
@@ -59,6 +59,7 @@ function App() {
             console.log("Geolocation API error:", geoErr);
           }
         },
+        // eslint-disable-next-line no-unused-vars
         (err) => console.log("User denied location access.")
       );
     }
