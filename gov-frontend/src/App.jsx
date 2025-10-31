@@ -48,11 +48,7 @@ function App() {
 
             if (matchedState) {
               setSelectedState(matchedState);
-              // trigger the next useEffect
-
               const cleanDistrict = apiDistrict.replace(' District', '').toUpperCase();
-              // We can't check if the district is valid yet,
-              // we just set it and hope it exists in the list
               setSelectedDistrict(cleanDistrict);
             }
           } catch (geoErr) {
@@ -100,7 +96,7 @@ function App() {
         })
         .catch(err => {
           console.error("Error fetching performance data:", err);
-          setError('Could not load performance data.');
+          setError("Select you District   /   Data can't found.");
           setLoading(false);
         });
     }
